@@ -494,7 +494,7 @@ section{
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient((rgb(255, 255, 255),aqua);
+    background: linear-gradient(rgb(255, 255, 255),aqua);
     position: absolute;
     border-radius: 8px;
     left: 0;
@@ -507,6 +507,7 @@ section{
     text-align: center;
     padding: 0 40px;
     transition: height 0.5s;
+}
 }
 .layer h5{
     color: #000;
