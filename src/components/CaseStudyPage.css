@@ -1,0 +1,98 @@
+/* General Case Study Container */
+.case-study-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #1e1e1e, #000); /* Gradient background for a modern look */
+  color: #ffffff; /* White text for better contrast */
+  min-height: 100vh; /* Full viewport height */
+  box-sizing: border-box;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* PDF Viewer Wrapper */
+.pdf-viewer-wrapper {
+  width: 100%;
+  max-width: 900px;
+  height: 80vh; /* Ensure it occupies most of the viewport height */
+  overflow-y: auto;
+  border-radius: 10px; /* Smooth rounded corners */
+  background-color: #ffffff; /* Clean white background */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25); /* Elevation effect */
+  padding: 20px; /* Add padding for better content spacing */
+}
+
+/* Mockups Container */
+.mockups-container {
+  text-align: center;
+  margin-top: 3rem;
+  color: #e0e0e0; /* Light grey for less emphasis */
+}
+
+/* Mockups Link Styling */
+.mockups-link {
+  color: #1e90ff; /* Bright blue for better visibility */
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem; /* Space between text and icon */
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.mockups-link:hover {
+  color: #63b3ed; /* Lighter blue on hover */
+  transform: translateY(-3px); /* Lift effect on hover */
+  text-decoration: underline;
+}
+
+/* Fixed Button Container */
+.figma-button-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+/* Figma Button Styling */
+.figma-button {
+  display: inline-block;
+  background-color: #00bcd4; /* Cyan for visibility */
+  color: #ffffff; /* White text */
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 12px; /* Smooth rounded corners */
+  text-decoration: none;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Depth effect */
+  transition: all 0.3s ease;
+}
+
+.figma-button:hover {
+  background-color: #ffffff; /* White on hover */
+  color: #00bcd4; /* Cyan text */
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .pdf-viewer-wrapper {
+      width: 90%;
+      height: 70vh; /* Adjust height for smaller screens */
+  }
+
+  .figma-button-container {
+      bottom: 10px;
+      right: 10px;
+  }
+
+  .figma-button {
+      font-size: 0.9rem;
+      padding: 10px 20px;
+  }
+}
