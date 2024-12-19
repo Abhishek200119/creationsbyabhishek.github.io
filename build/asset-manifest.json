@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.9c754418.css",
-    "main.js": "/static/js/main.2afb189e.js",
-    "index.html": "/index.html",
-    "main.9c754418.css.map": "/static/css/main.9c754418.css.map",
-    "main.2afb189e.js.map": "/static/js/main.2afb189e.js.map"
+    "main.css": "/creationsbyabhishek.github.io/static/css/main.9c754418.css",
+    "main.js": "/creationsbyabhishek.github.io/static/js/main.2afb189e.js",
+    "index.html": "/creationsbyabhishek.github.io/index.html",
+    "main.9c754418.css.map": "/creationsbyabhishek.github.io/static/css/main.9c754418.css.map",
+    "main.2afb189e.js.map": "/creationsbyabhishek.github.io/static/js/main.2afb189e.js.map"
   },
   "entrypoints": [
     "static/css/main.9c754418.css",
