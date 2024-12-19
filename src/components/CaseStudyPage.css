@@ -1,0 +1,122 @@
+/* General Case Study Container */
+.case-study-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #1e1e1e, #000); /* Gradient background for a modern look */
+  color: #ffffff; /* White text for better contrast */
+  min-height: 100vh; /* Full viewport height */
+  box-sizing: border-box;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* PDF Viewer Wrapper */
+.pdf-viewer-wrapper {
+  width: 100%;
+  max-width: 900px;
+  height: 80vh; /* Ensure it occupies most of the viewport height */
+  overflow-y: auto;
+  border-radius: 10px; /* Smooth rounded corners */
+  background-color: #ffffff; /* Clean white background */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25); /* Elevation effect */
+  padding: 20px; /* Add padding for better content spacing */
+}
+
+/* Fixed Button Container */
+.figma-button-container {
+  position: fixed;
+  bottom: 20px; /* Distance from the bottom */
+  right: 20px; /* Distance from the right */
+  z-index: 1000;
+}
+
+/* Figma Button Styling */
+.figma-button {
+  display: inline-block;
+  background-color: #00bcd4; /* Cyan for visibility */
+  color: #ffffff; /* White text */
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 12px; /* Smooth rounded corners */
+  text-decoration: none;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Depth effect */
+  transition: all 0.3s ease;
+}
+
+.figma-button:hover {
+  background-color: #ffffff; /* White on hover */
+  color: #00bcd4; /* Cyan text */
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+}
+
+/* Mockups Header Styling */
+.mockups-container h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff; /* Bright white for header text */
+  margin-bottom: 10px;
+}
+
+
+/* Mockups Link Styling */
+.mockups-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #00bcd4; /* Cyan for visibility */
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 2px solid #00bcd4; /* Border to enhance focus */
+  border-radius: 8px;
+  background-color: transparent; /* Transparent background for a sleek look */
+  transition: all 0.3s ease;
+  gap: 0.5rem; /* Space between text and icon */
+}
+
+/* Mockups Link Hover Effect */
+.mockups-link:hover {
+  background-color: #00bcd4; /* Cyan background on hover */
+  color: #ffffff; /* White text on hover */
+  transform: translateY(-3px); /* Lift effect */
+  box-shadow: 0 6px 12px rgba(0, 188, 212, 0.3); /* Glow effect */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .mockups-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .mockups-container p {
+    font-size: 1rem;
+  }
+
+  .mockups-link {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .pdf-viewer-wrapper {
+      width: 90%;
+      height: 70vh; /* Adjust height for smaller screens */
+  }
+
+  .figma-button-container {
+      bottom: 10px;
+      right: 10px;
+  }
+
+  .figma-button {
+      font-size: 0.9rem;
+      padding: 10px 20px;
+  }
+}

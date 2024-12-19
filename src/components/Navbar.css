@@ -1,0 +1,71 @@
+.navbar {
+  background-color: #000000; /* Solid black background for a sleek look */
+  padding: 10px 20px; /* Compact padding for a professional look */
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-end; /* Align links to the right */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px; /* Consistent spacing between links */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  position: relative; /* Needed for the hover effect */
+}
+
+.nav-links li a {
+  color: #ffffff; /* White text for contrast */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 10px 15px; /* Comfortable clickable area */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #00bcd4; /* Highlight color on hover */
+  transform: translateY(-3px); /* Slight lift effect on hover */
+}
+
+.nav-links li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #00bcd4; /* Highlight color */
+  transition: width 0.3s ease, left 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-links li a:hover::after {
+  width: 100%; /* Full underline effect on hover */
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .nav-links {
+    flex-direction: column; /* Stack links vertically on small screens */
+    align-items: flex-end; /* Align links to the right still */
+    gap: 10px;
+  }
+
+  .nav-links li a {
+    font-size: 1rem; /* Slightly smaller font for mobile */
+    padding: 8px 10px;
+  }
+}

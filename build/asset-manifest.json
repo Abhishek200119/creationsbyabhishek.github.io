@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/creationsbyabhishek.github.io/static/css/main.96809825.css",
+    "main.js": "/creationsbyabhishek.github.io/static/js/main.c2ba4f41.js",
+    "index.html": "/creationsbyabhishek.github.io/index.html",
+    "main.96809825.css.map": "/creationsbyabhishek.github.io/static/css/main.96809825.css.map",
+    "main.c2ba4f41.js.map": "/creationsbyabhishek.github.io/static/js/main.c2ba4f41.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.96809825.css",
+    "static/js/main.c2ba4f41.js"
+  ]
+}
